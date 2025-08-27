@@ -41,11 +41,15 @@ function playRound(humanChoice, computerChoice) {
     }
 
     if (humanScore === 5) {
-        alert("Congratulations! You won the game!");
-        resetGame();
+        setTimeout(() => {
+            alert("Congratulations! You won the game!");
+            resetGame();
+        }, 0);
     } else if (computerScore === 5) {
-        alert("Sorry, you lost the game.");
-        resetGame();
+        setTimeout(() => {
+            alert("Sorry, you lost the game.");
+            resetGame();
+        }, 0);
     }
 }
 
